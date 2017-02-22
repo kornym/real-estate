@@ -3,13 +3,32 @@
 
 <head>
     <title>Home</title>
+    
     <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
-    <p>Welcome to
-        <%= message %>  
-    </p>
+    <h1> 
+        Comparateur de prix
+    </h1>
+
+    <h2>
+       Entrez le lien de l'annonce ici :
+    </h2>
+
+    <form method = "get" action = "/compare">
+
+       <input type="text" class="form-control" name = "urlLbc">
+
+       <input class="btn btn-default" type="submit" value="Ok">
+    </form>
+   
+  <br> <%= message_1 %> </br>
+  <br> <%= message_2 %> </br>
+  <br> <%= message_3 %> </br>
+
+  <h3> <%= message_4 %> </h3>
+
 </body>
 
 </html>
